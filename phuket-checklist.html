@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a3d62">
+<title>푸켓 입국 최종 체크리스트 | 2026년 4월 기준</title>
+<meta name="description" content="TDAC·전자담배·면세한도까지. 한국인 여행자를 위한 2026년 태국 푸켓 입국 실전 가이드">
+<meta property="og:title" content="🇹🇭 푸켓 입국 최종 체크리스트">
+<meta property="og:description" content="2026년 4월 기준, 한국인 여행자를 위한 태국 푸켓 입국 실전 가이드">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,600&family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  :root{
+    --ink:#0a1f2e;
+    --ink-soft:#2a3d4d;
+    --sand:#f5ede0;
+    --sand-deep:#ebdfc9;
+    --sea:#0a3d62;
+    --sea-deep:#062c49;
+    --coral:#ff5c39;
+    --coral-soft:#ffb199;
+    --palm:#3a7856;
+    --sun:#ffb74d;
+    --paper:#fbf7ef;
+    --line:rgba(10,31,46,0.12);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.08);
+    --shadow-md:0 8px 24px rgba(10,31,46,.08);
+    --shadow-lg:0 20px 60px rgba(10,31,46,.12);
+  }
+  html,body{background:var(--paper);color:var(--ink);word-break:keep-all;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  body{
+    font-family:'IBM Plex Sans KR','Gowun Dodum',-apple-system,sans-serif;
+    font-weight:400;
+    min-height:100dvh;
+    overflow-x:hidden;
+    padding-top:env(safe-area-inset-top);
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  .serif{font-family:'Fraunces',serif;font-optical-sizing:auto;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    min-height:92dvh;
+    background:linear-gradient(180deg,var(--sea-deep) 0%,var(--sea) 55%,#1a6b8a 100%);
+    color:var(--paper);
+    overflow:hidden;
+    padding:80px 24px 60px;
+    padding-left:max(24px,env(safe-area-inset-left));
+    padding-right:max(24px,env(safe-area-inset-right));
+    display:flex;flex-direction:column;justify-content:space-between;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 20% 10%,rgba(255,183,77,.25),transparent 40%),
+      radial-gradient(circle at 85% 80%,rgba(255,92,57,.2),transparent 40%);
+    pointer-events:none;
+  }
+  .hero::after{
+    content:"";position:absolute;bottom:-1px;left:0;right:0;height:60px;
+    background:var(--paper);
+    clip-path:polygon(0 60%,8% 40%,16% 70%,25% 45%,35% 65%,45% 35%,55% 60%,65% 40%,75% 70%,85% 45%,95% 65%,100% 50%,100% 100%,0 100%);
+  }
+  .hero-top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.15em;text-transform:uppercase;opacity:.75;}
+  .hero-top .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--sun);margin-right:8px;vertical-align:middle;animation:pulse 2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+  .hero-main{position:relative;z-index:2;}
+  .hero-flag{font-size:48px;margin-bottom:24px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.3));}
+  .hero h1{
+    font-family:'Fraunces',serif;font-weight:300;font-style:italic;
+    font-size:clamp(44px,11vw,92px);
+    line-height:.95;letter-spacing:-.02em;
+    margin-bottom:20px;
+  }
+  .hero h1 .accent{font-weight:800;font-style:normal;color:var(--sun);display:block;}
+  .hero-sub{
+    font-size:15px;line-height:1.7;opacity:.85;max-width:520px;
+    border-left:2px solid var(--sun);padding-left:16px;
+  }
+  .hero-meta{position:relative;z-index:2;display:flex;gap:24px;flex-wrap:wrap;font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.7;margin-top:32px;}
+  .hero-meta span{padding:6px 0;border-top:1px solid rgba(255,255,255,.2);min-width:120px;}
+
+  /* ===== SECTION WRAPPERS ===== */
+  section{position:relative;padding:72px 24px;padding-left:max(24px,env(safe-area-inset-left));padding-right:max(24px,env(safe-area-inset-right));}
+  .wrap{max-width:680px;margin:0 auto;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;letter-spacing:.25em;text-transform:uppercase;
+    color:var(--coral);margin-bottom:14px;display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--coral);}
+  h2{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:clamp(30px,7vw,44px);line-height:1.1;letter-spacing:-.01em;
+    margin-bottom:20px;color:var(--sea-deep);
+  }
+  h2 em{font-style:italic;font-weight:300;color:var(--coral);}
+  .lead{font-size:16px;line-height:1.75;color:var(--ink-soft);margin-bottom:36px;}
+
+  /* ===== STEP CARDS ===== */
+  .step-card{
+    background:#fff;border:1px solid var(--line);border-radius:20px;
+    padding:28px 22px;margin-bottom:20px;box-shadow:var(--shadow-sm);
+    position:relative;overflow:hidden;
+  }
+  .step-card::before{
+    content:"";position:absolute;top:0;left:0;width:4px;height:100%;
+    background:linear-gradient(180deg,var(--sea),var(--palm));
+  }
+  .step-num{
+    font-family:'Fraunces',serif;font-weight:800;
+    font-size:56px;line-height:1;color:var(--sand-deep);
+    position:absolute;top:16px;right:20px;user-select:none;
+  }
+  .step-tag{
+    display:inline-block;font-family:'JetBrains Mono',monospace;
+    font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+    background:var(--sea-deep);color:var(--paper);padding:5px 10px;border-radius:4px;
+    margin-bottom:12px;
+  }
+  .step-title{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:24px;line-height:1.25;margin-bottom:14px;color:var(--sea-deep);
+    padding-right:60px;
+  }
+  .step-body{font-size:15px;line-height:1.72;color:var(--ink-soft);}
+  .step-body p{margin-bottom:12px;}
+  .step-body strong{color:var(--sea-deep);font-weight:600;}
+
+  /* ===== INFO TABLE ===== */
+  .info-table{
+    width:100%;margin-top:16px;border-collapse:collapse;
+    font-size:14px;background:var(--paper);border-radius:12px;overflow:hidden;
+  }
+  .info-table td{
+    padding:12px 14px;border-bottom:1px solid var(--line);
+    vertical-align:top;line-height:1.55;
+  }
+  .info-table tr:last-child td{border-bottom:none;}
+  .info-table td:first-child{
+    font-weight:600;color:var(--sea-deep);white-space:nowrap;
+    width:38%;background:var(--sand);
+  }
+  .info-table strong{color:var(--coral);}
+
+  /* ===== CHECKLIST ===== */
+  .checklist{list-style:none;margin-top:16px;}
+  .checklist li{
+    display:flex;align-items:flex-start;gap:12px;padding:12px 0;
+    border-bottom:1px dashed var(--line);font-size:15px;line-height:1.6;
+  }
+  .checklist li:last-child{border-bottom:none;}
+  .checklist .box{
+    flex-shrink:0;width:20px;height:20px;border:2px solid var(--sea);
+    border-radius:5px;margin-top:2px;
+  }
+
+  /* ===== DANGER ZONE ===== */
+  .danger-section{
+    background:linear-gradient(180deg,#2a0e0a 0%,#4a1a12 100%);
+    color:var(--paper);margin-top:0;padding:80px 24px 72px;
+    padding-left:max(24px,env(safe-area-inset-left));padding-right:max(24px,env(safe-area-inset-right));
+  }
+  .danger-section h2{color:#fff;}
+  .danger-section h2 em{color:var(--coral-soft);}
+  .danger-section .lead{color:rgba(255,255,255,.75);}
+  .danger-section .eyebrow{color:var(--coral-soft);}
+  .danger-section .eyebrow::before{background:var(--coral-soft);}
+
+  .danger-card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,183,153,.3);
+    border-left:4px solid var(--coral);
+    border-radius:14px;padding:24px 20px;margin-bottom:18px;
+    backdrop-filter:blur(10px);
+  }
+  .danger-label{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--coral);margin-bottom:10px;font-weight:600;
+  }
+  .danger-label .warn{width:14px;height:14px;background:var(--coral);border-radius:50%;display:inline-block;animation:pulse 1.5s infinite;}
+  .danger-card h3{
+    font-family:'Fraunces',serif;font-weight:600;
+    font-size:22px;line-height:1.3;color:#fff;margin-bottom:12px;
+  }
+  .danger-card p{font-size:14.5px;line-height:1.7;color:rgba(255,255,255,.82);margin-bottom:10px;}
+  .danger-card ul{margin:12px 0;padding-left:20px;}
+  .danger-card li{font-size:14px;line-height:1.7;color:rgba(255,255,255,.78);margin-bottom:6px;}
+  .danger-quote{
+    background:rgba(255,92,57,.12);border-left:3px solid var(--coral);
+    padding:12px 14px;border-radius:6px;font-size:13.5px;line-height:1.65;
+    margin-top:14px;color:rgba(255,255,255,.9);font-style:italic;
+  }
+
+  .limits-table{
+    width:100%;margin:16px 0;border-collapse:separate;border-spacing:0;
+    background:rgba(0,0,0,.2);border-radius:10px;overflow:hidden;
+  }
+  .limits-table td{padding:14px;border-bottom:1px solid rgba(255,255,255,.08);}
+  .limits-table tr:last-child td{border-bottom:none;}
+  .limits-table td:first-child{color:rgba(255,255,255,.7);font-size:13px;}
+  .limits-table td:last-child{text-align:right;font-family:'Fraunces',serif;font-size:17px;font-weight:600;color:var(--coral-soft);}
+
+  /* ===== FINAL Q&A ===== */
+  .final{
+    background:linear-gradient(180deg,var(--sand) 0%,var(--paper) 100%);
+    padding:80px 24px 100px;
+    padding-left:max(24px,env(safe-area-inset-left));padding-right:max(24px,env(safe-area-inset-right));
+  }
+  .qa-list{counter-reset:qa;margin-top:24px;}
+  .qa-item{
+    counter-increment:qa;
+    background:#fff;border-radius:16px;padding:22px 20px 22px 68px;
+    margin-bottom:14px;position:relative;box-shadow:var(--shadow-sm);
+    border:1px solid var(--line);
+  }
+  .qa-item::before{
+    content:counter(qa,decimal-leading-zero);
+    position:absolute;left:18px;top:20px;
+    font-family:'Fraunces',serif;font-weight:800;font-size:28px;
+    color:var(--coral);line-height:1;
+  }
+  .qa-item strong{display:block;font-family:'Fraunces',serif;font-weight:600;font-size:17px;color:var(--sea-deep);margin-bottom:6px;}
+  .qa-item span{font-size:14px;color:var(--ink-soft);line-height:1.65;}
+
+  /* ===== IMMIGRATION EN ===== */
+  .en-box{
+    background:var(--sea-deep);color:var(--paper);
+    border-radius:20px;padding:32px 24px;margin-top:24px;
+    position:relative;overflow:hidden;
+  }
+  .en-box::before{
+    content:"EN";position:absolute;top:20px;right:24px;
+    font-family:'Fraunces',serif;font-weight:800;font-size:60px;
+    opacity:.1;line-height:1;
+  }
+  .en-box h3{font-family:'Fraunces',serif;font-weight:600;font-size:22px;margin-bottom:18px;}
+  .en-row{display:flex;flex-direction:column;gap:6px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15);}
+  .en-row:last-child{border-bottom:none;}
+  .en-q{font-size:12px;opacity:.7;letter-spacing:.02em;}
+  .en-a{font-family:'Fraunces',serif;font-size:17px;color:var(--sun);font-weight:600;font-style:italic;}
+
+  /* ===== EN V2: Job List + Rows ===== */
+  .en-common-q{
+    background:rgba(255,255,255,.08);border-radius:10px;
+    padding:12px 14px;margin-bottom:14px;
+  }
+  .en-q-label{
+    display:block;font-size:13px;opacity:.9;font-weight:500;
+    line-height:1.55;
+  }
+  .en-q-kr{color:rgba(255,183,77,.85);font-size:12px;margin-left:4px;}
+  .en-job-list{
+    display:flex;flex-direction:column;gap:10px;
+    margin-bottom:20px;
+  }
+  .en-job{
+    background:rgba(255,255,255,.06);border-radius:10px;
+    padding:12px 14px;display:grid;grid-template-columns:56px 1fr;
+    gap:6px 14px;align-items:center;
+    border-left:3px solid var(--sun);
+  }
+  .en-job-tag{
+    grid-row:1/3;font-family:'IBM Plex Sans KR',sans-serif;
+    font-size:11px;font-weight:700;background:var(--sun);color:var(--sea-deep);
+    padding:4px 6px;border-radius:5px;text-align:center;align-self:start;
+    letter-spacing:-.02em;
+  }
+  .en-job .en-a{font-size:16px;line-height:1.3;}
+  .en-pron{
+    font-family:'IBM Plex Sans KR',sans-serif;font-size:13px;
+    color:rgba(255,255,255,.72);letter-spacing:-.01em;line-height:1.4;
+  }
+  .en-row-v2{
+    padding:14px 0;border-top:1px solid rgba(255,255,255,.12);
+    display:flex;flex-direction:column;gap:6px;
+  }
+  .en-row-v2 .en-q-label{margin-bottom:4px;}
+  .en-row-v2 .en-a{font-size:16px;}
+  .en-tip{
+    margin-top:18px;padding:14px 16px;
+    background:rgba(255,183,77,.12);border:1px dashed rgba(255,183,77,.3);
+    border-radius:10px;font-size:13.5px;line-height:1.6;
+    color:rgba(255,255,255,.88);
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:var(--ink);color:rgba(255,255,255,.6);
+    padding:40px 24px;padding-bottom:max(40px,env(safe-area-inset-bottom));
+    text-align:center;font-size:12px;line-height:1.7;
+  }
+  footer .wave{font-size:28px;margin-bottom:14px;display:block;}
+  footer strong{color:var(--sun);font-family:'Fraunces',serif;font-size:14px;display:block;margin-bottom:6px;}
+
+  /* ===== SMALL SCREENS ===== */
+  @media (max-width:520px){
+    .hero{padding:60px 20px 50px;}
+    section{padding:56px 20px;}
+    .step-card{padding:24px 18px;border-radius:16px;}
+    .step-num{font-size:44px;top:14px;right:16px;}
+    .step-title{font-size:21px;padding-right:50px;}
+    .info-table td{padding:10px 12px;font-size:13.5px;}
+    .info-table td:first-child{width:42%;}
+    .danger-card{padding:20px 16px;}
+    .danger-card h3{font-size:19px;}
+    .qa-item{padding:20px 16px 20px 56px;}
+    .qa-item::before{left:14px;font-size:24px;}
+    .en-box{padding:26px 20px;}
+  }
+  @media (max-width:380px){
+    .hero h1{font-size:42px;}
+    h2{font-size:28px;}
+    .step-title{font-size:19px;}
+    .hero-meta{gap:14px;}
+    .hero-meta span{min-width:100px;font-size:10px;}
+    .en-job{grid-template-columns:50px 1fr;gap:4px 10px;}
+    .en-job-tag{font-size:10px;padding:3px 4px;}
+    .en-job .en-a{font-size:15px;}
+    .en-pron{font-size:12px;}
+  }
+  @media (min-width:521px){
+    .wrap{padding:0 8px;}
+  }
+
+  /* ===== REVEAL ===== */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ===== TDAC LINK ===== */
+  .tdac-link{
+    color:var(--coral);text-decoration:none;
+    padding:4px 10px;margin:-4px -10px;border-radius:6px;
+    display:inline-block;transition:background .2s;
+    min-height:44px;line-height:1.5;
+  }
+  .tdac-link:active{background:rgba(255,92,57,.12);}
+  .tdac-link strong{color:var(--coral);}
+
+  /* ===== BACK BUTTON ===== */
+  .back-btn{
+    position:fixed;
+    top:calc(env(safe-area-inset-top) + 14px);
+    left:calc(env(safe-area-inset-left) + 14px);
+    width:44px;height:44px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border:none;border-radius:50%;
+    color:var(--sea-deep);cursor:pointer;
+    box-shadow:0 4px 14px rgba(0,0,0,.18);
+    z-index:100;transition:transform .2s,background .2s;
+    font-size:20px;line-height:1;
+  }
+  .back-btn:active{transform:scale(.92);background:#fff;}
+  .back-btn svg{width:18px;height:18px;}
+
+  /* ===== TOP CTA BUTTON ===== */
+  .tdac-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--coral);color:#fff;text-decoration:none;
+    font-family:'IBM Plex Sans KR',sans-serif;font-weight:600;font-size:14px;
+    padding:14px 22px;border-radius:100px;margin-top:20px;
+    box-shadow:0 6px 20px rgba(255,92,57,.35);
+    min-height:50px;transition:transform .2s;
+  }
+  .tdac-cta:active{transform:scale(.97);}
+</style>
+</head>
+<body>
+
+<!-- ================== BACK BUTTON ================== -->
+<button class="back-btn" onclick="handleBack()" aria-label="뒤로 가기">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 12H5M12 19l-7-7 7-7"/>
+  </svg>
+</button>
+
+<!-- ================== HERO ================== -->
+<header class="hero">
+  <div class="hero-top">
+    <span><span class="dot"></span>2026 · APRIL · UPDATED</span>
+    <span>PHUKET · TH</span>
+  </div>
+
+  <div class="hero-main">
+    <div class="hero-flag">🇹🇭</div>
+    <h1>
+      <span>푸켓</span>
+      <span class="accent">입국 체크리스트</span>
+    </h1>
+    <p class="hero-sub">
+      2026년 4월 기준, 한국인 여행자의 태국 푸켓 입국을 위한 실전 가이드.<br>
+      TDAC부터 전자담배·면세한도까지. 전략가 모드로 정리했습니다.
+    </p>
+  </div>
+
+  <div class="hero-meta">
+    <span>01 · TDAC</span>
+    <span>02 · DOCS</span>
+    <span>03 · LUGGAGE</span>
+    <span>04 · CUSTOMS</span>
+    <span>05 · PAY</span>
+  </div>
+</header>
+
+<!-- ================== STEP 1 - TDAC ================== -->
+<section style="background:var(--paper);">
+  <div class="wrap reveal">
+    <div class="eyebrow">STEP 01 — 디지털 입국 카드</div>
+    <h2>출국 전 필수 서류<br><em>TDAC</em></h2>
+    <p class="lead">
+      2025년 5월부터 의무화된 <strong>Thailand Digital Arrival Card</strong>는 2026년에도 유효합니다.
+      종이 TM6는 더 이상 받지 않으니, 반드시 QR코드를 생성해서 지참하세요.
+    </p>
+
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <span class="step-tag">Essential</span>
+      <h3 class="step-title">TDAC 발급 한눈에 보기</h3>
+      <div class="step-body">
+        <table class="info-table">
+          <tr><td>공식 사이트</td><td><a href="https://tdac.immigration.go.th" target="_blank" rel="noopener" class="tdac-link"><strong>tdac.immigration.go.th</strong> ↗</a><br>이것만 사용하세요 (탭하면 바로 이동)</td></tr>
+          <tr><td>작성 시점</td><td>도착일 포함 <strong>3일(72시간) 이내</strong></td></tr>
+          <tr><td>수수료</td><td><strong>무료</strong> — 돈 요구하는 사이트는 사기</td></tr>
+          <tr><td>제출 후</td><td>QR코드 + 확인 PDF를 이메일로 수령<br>→ 휴대폰에 <strong>스크린샷 + PDF</strong> 둘 다 저장</td></tr>
+          <tr><td>주의사항</td><td>1회 입국에만 유효<br>재입국 시 매번 새로 제출</td></tr>
+        </table>
+        <p style="margin-top:18px;padding:14px 16px;background:var(--sand);border-radius:10px;font-size:14px;">
+          💡 <strong>코치 팁.</strong> 기내 와이파이가 먹통일 때를 대비해 QR코드는 <strong>스크린샷과 이메일 PDF 다운로드</strong>를 둘 다 해두세요. 공항 네트워크 불안정도 흔한 이슈입니다.
+        </p>
+        <div style="text-align:center;margin-top:22px;">
+          <a href="https://tdac.immigration.go.th" target="_blank" rel="noopener" class="tdac-cta">
+            🇹🇭 TDAC 공식 사이트 바로가기 →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== STEP 2 - DOCS ================== -->
+<section style="background:var(--paper);padding-top:0;">
+  <div class="wrap reveal">
+    <div class="eyebrow">STEP 02 — 입국 심사</div>
+    <h2>지참 서류<br><em>6가지</em></h2>
+
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <span class="step-tag">Must Have</span>
+      <h3 class="step-title">공항 가기 전 최종 확인</h3>
+      <div class="step-body">
+        <ul class="checklist">
+          <li><span class="box"></span><div><strong>여권</strong> — 유효기간 6개월 이상 남아있는지 확인</div></li>
+          <li><span class="box"></span><div><strong>무비자 90일 관광 체류</strong> 가능 (한국 여권 소지자)</div></li>
+          <li><span class="box"></span><div><strong>귀국 항공권 영문 확인서</strong> — PDF 또는 출력본</div></li>
+          <li><span class="box"></span><div><strong>숙소 바우처 영문본</strong> — Patong 예약 확인서</div></li>
+          <li><span class="box"></span><div><strong>체류비 증빙 현금</strong> — 1~2만 바트 상당 (USD 환전도 OK)</div></li>
+          <li><span class="box"></span><div><strong>TDAC QR코드</strong> — STEP 01에서 생성한 것</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== STEP 3 - LUGGAGE ================== -->
+<section style="background:linear-gradient(180deg,var(--paper) 0%,var(--sand) 100%);">
+  <div class="wrap reveal">
+    <div class="eyebrow">STEP 03 — 수하물</div>
+    <h2>기내 vs 위탁<br><em>헷갈리면 안 됨</em></h2>
+
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <span class="step-tag">Don't Mix Up</span>
+      <h3 class="step-title">리튬배터리 = 무조건 기내</h3>
+      <div class="step-body">
+        <table class="info-table">
+          <tr><td>🔋 보조배터리</td><td><strong>✈️ 기내 휴대만</strong><br>위탁 시 발화 위험·압수</td></tr>
+          <tr><td>🌬 손풍기</td><td><strong>✈️ 기내 휴대만</strong><br>내장 리튬배터리 → 위탁 금지</td></tr>
+          <tr><td>💻 촬영 장비</td><td>✈️ 기내 휴대 권장<br>파손·분실 리스크 최소화</td></tr>
+          <tr><td>👗 의류·세면도구</td><td>📦 위탁 OK</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== STEP 4 - DANGER ZONE ================== -->
+<section class="danger-section">
+  <div class="wrap reveal">
+    <div class="eyebrow">STEP 04 — DANGER ZONE</div>
+    <h2>절대 실수 금지<br><em>구금·추방 사례</em></h2>
+    <p class="lead">
+      아래 3가지는 매년 한국인이 공항에서 걸리는 <strong style="color:var(--coral-soft);">대표 케이스</strong>입니다.
+      "설마 내가?" 하는 순간 여행이 통째로 날아갑니다.
+    </p>
+
+    <!-- 전자담배 -->
+    <div class="danger-card">
+      <div class="danger-label"><span class="warn"></span>NO.1 — 가장 흔한 실수</div>
+      <h3>① 전자담배 = 예외 없음, 절대 금지</h3>
+      <p>태국은 2014년부터 전자담배 금지법에 따라 <strong style="color:var(--coral-soft);">모든 형태의 전자담배 제품과 액상 니코틴</strong>의 반입·사용을 불법으로 규정합니다. 기기 본체나 리필 카트리지 소지만으로도 처벌 대상.</p>
+      <ul>
+        <li>2024년 방콕공항 — 본체 2개 + 액상 3병 적발, 벌금 20만 바트 + 강제 출국</li>
+        <li>2023년 푸켓 — 흡연 중 적발, 3개월 구금 후 추방된 한국인</li>
+        <li>수완나품·돈므앙·푸켓 공항 모두 X레이에 배터리가 선명하게 잡힘</li>
+        <li>태국은 신고 포상금 제도(부과 벌금의 60%)까지 있음</li>
+      </ul>
+      <div class="danger-quote">
+        🔥 출국 전 오늘 밤, 캐리어·파우치·크로스백·외투 주머니까지 싹 다시 검사하세요. 무심코 넣은 거 하나가 4월 일정 전체를 날립니다.
+      </div>
+    </div>
+
+    <!-- 면세한도 -->
+    <div class="danger-card">
+      <div class="danger-label"><span class="warn"></span>NO.2 — 합산 꼼수 금지</div>
+      <h3>② 면세 한도 — "일행끼리 나눠 들기" 벌금 대상</h3>
+      <table class="limits-table">
+        <tr><td>주류</td><td>1L (1병)</td></tr>
+        <tr><td>담배</td><td>1보루 (200개비)</td></tr>
+        <tr><td>일반 물품 총액</td><td>2만 바트 이내</td></tr>
+      </table>
+      <p>각자 영수증이 있어도 소용없습니다. 태국 세관은 <strong style="color:var(--coral-soft);">반입 시점의 개인별 소지량</strong>을 기준으로 적용해요.</p>
+      <p>초과분에 단순 과세가 아니라 <strong style="color:var(--coral-soft);">최소 10배의 세율을 벌금</strong>으로 매기는 구조. 담배 2보루를 신고 없이 들였다가 담배값의 수십 배를 내고 나온 사례가 실제로 있습니다.</p>
+      <div class="danger-quote">
+        💡 면세점에서 "대신 좀 들어줘" 요청받는 순간 거절하세요. <strong style="color:#fff;">본인 짐 = 본인 것만</strong>.
+      </div>
+    </div>
+
+    <!-- 대마 -->
+    <div class="danger-card">
+      <div class="danger-label"><span class="warn"></span>NO.3 — 규제 다시 강화됨</div>
+      <h3>③ 대마(Cannabis) — 2025년 말 재규제</h3>
+      <p>법이 다시 "의료용"으로 전환되면서 라이선스 없는 길거리 노점은 위험합니다. 공공장소 흡연은 불법이며, 연기·냄새로 민원 시 공중보건법에 따라 <strong style="color:var(--coral-soft);">25,000 바트 벌금 또는 3개월 징역형</strong>까지 가능.</p>
+      <ul>
+        <li><strong>반입:</strong> 절대 금지 (한국에서 가져가는 어떤 제품이든)</li>
+        <li><strong>현지 제품:</strong> 관광객 호기심으로 접근 금지</li>
+        <li><strong>콘텐츠 촬영 주의:</strong> 배경에 잡히기만 해도 리스크</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================== STEP 5 - PAYMENT ================== -->
+<section style="background:var(--paper);">
+  <div class="wrap reveal">
+    <div class="eyebrow">STEP 05 — 결제 & 통신</div>
+    <h2>현지 세팅<br><em>5가지</em></h2>
+
+    <div class="step-card">
+      <div class="step-num">05</div>
+      <span class="step-tag">Smart Travel</span>
+      <h3 class="step-title">도착 즉시 바로 쓰려면</h3>
+      <div class="step-body">
+        <table class="info-table">
+          <tr><td>💳 GLN (QR)</td><td>토스·하나머니에서 활성화<br>→ 태국 QR 직접 결제</td></tr>
+          <tr><td>💳 트래블로그</td><td>THB 미리 충전<br>환전 수수료 절약</td></tr>
+          <tr><td>💵 현금</td><td>1~2만 바트 + USD 소액 (비상용)</td></tr>
+          <tr><td>🚕 Grab 앱</td><td>한국에서 <strong>미리 설치 + 카드 등록</strong><br>현지 택시 바가지 방지</td></tr>
+          <tr><td>📶 유심/이심</td><td>한국에서 이심 미리 구매<br>도착 즉시 활성화</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- ENGLISH IMMIGRATION -->
+    <div class="en-box">
+      <h3>🛂 입국심사 영어 답변 + 발음</h3>
+      <p style="font-size:13px;opacity:.75;margin-bottom:18px;line-height:1.6;">
+        영어 자신 없어도 괜찮아요. 아래 문장만 똑똑히 말하면 90% 통과돼요.
+      </p>
+
+      <!-- 공통 질문 -->
+      <div class="en-common-q">
+        <span class="en-q-label">Q1. What's your job? <span class="en-q-kr">(직업이 뭐예요?)</span></span>
+      </div>
+
+      <div class="en-job-list">
+        <div class="en-job">
+          <span class="en-job-tag">직장인</span>
+          <span class="en-a">"I'm an office worker."</span>
+          <span class="en-pron">아임 언 오피스 워커.</span>
+        </div>
+        <div class="en-job">
+          <span class="en-job-tag">주부</span>
+          <span class="en-a">"I'm a housewife."</span>
+          <span class="en-pron">아임 어 하우스와이프.</span>
+        </div>
+        <div class="en-job">
+          <span class="en-job-tag">프리랜서</span>
+          <span class="en-a">"I'm a freelancer."</span>
+          <span class="en-pron">아임 어 프리랜서.</span>
+        </div>
+        <div class="en-job">
+          <span class="en-job-tag">자영업</span>
+          <span class="en-a">"I run my own business."</span>
+          <span class="en-pron">아이 런 마이 오운 비즈니스.</span>
+        </div>
+        <div class="en-job">
+          <span class="en-job-tag">학생</span>
+          <span class="en-a">"I'm a student."</span>
+          <span class="en-pron">아임 어 스튜던트.</span>
+        </div>
+        <div class="en-job">
+          <span class="en-job-tag">은퇴</span>
+          <span class="en-a">"I'm retired."</span>
+          <span class="en-pron">아임 리타이어드.</span>
+        </div>
+      </div>
+
+      <!-- 다른 질문들 -->
+      <div class="en-row-v2">
+        <span class="en-q-label">Q2. Purpose of visit? <span class="en-q-kr">(방문 목적?)</span></span>
+        <span class="en-a">"Tourism."</span>
+        <span class="en-pron">투어리즘. (또는 "사이트싱" Sightseeing)</span>
+      </div>
+
+      <div class="en-row-v2">
+        <span class="en-q-label">Q3. How long will you stay? <span class="en-q-kr">(며칠 머물러요?)</span></span>
+        <span class="en-a">"[숫자] days."</span>
+        <span class="en-pron">세븐 데이즈 (7일) / 텐 데이즈 (10일)</span>
+      </div>
+
+      <div class="en-row-v2">
+        <span class="en-q-label">Q4. Where will you stay? <span class="en-q-kr">(어디서 머무르세요?)</span></span>
+        <span class="en-a">"At a hotel in Patong."</span>
+        <span class="en-pron">앳 어 호텔 인 파통.</span>
+      </div>
+
+      <div class="en-tip">
+        💡 못 알아들으면 당황하지 말고 <strong style="color:var(--sun);">"Pardon?" (파든?)</strong><br>
+        이러면 다시 천천히 말해줘요.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== FINAL Q&A ================== -->
+<section class="final">
+  <div class="wrap reveal">
+    <div class="eyebrow">OUTRO — 출국 전날 밤</div>
+    <h2>셀프 체크<br><em>4가지만</em></h2>
+    <p class="lead">
+      내일 아침 캐리어 잠그기 전에 이 4가지만 <strong>소리 내서</strong> 확인하세요.
+    </p>
+
+    <div class="qa-list">
+      <div class="qa-item">
+        <strong>TDAC QR코드</strong>
+        <span>이메일 + 스크린샷 둘 다 있나요?</span>
+      </div>
+      <div class="qa-item">
+        <strong>전자담배</strong>
+        <span>파우치·가방·외투 주머니까지 진짜 다 뺐나요?</span>
+      </div>
+      <div class="qa-item">
+        <strong>보조배터리·손풍기</strong>
+        <span>기내 가방에 있나요? (위탁 짐 아님!)</span>
+      </div>
+      <div class="qa-item">
+        <strong>여권 유효기간</strong>
+        <span>6개월 이상 남아있나요?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== FOOTER ================== -->
+<footer>
+  <span class="wave">🌴</span>
+  <strong>Safe travels to Phuket</strong>
+  2026 · April · 한국인 여행자를 위한 실전 가이드<br>
+  본 체크리스트는 출국 전 최종 확인용입니다<br>
+  공식 정보는 외교부 해외안전여행(0404.go.kr) 참고
+</footer>
+
+<script>
+  // Back button — 히스토리 있으면 뒤로, 없으면 창 닫기
+  function handleBack() {
+    if (window.history.length > 1) {
+      window.history.back();
+    } else if (document.referrer) {
+      window.location.href = document.referrer;
+    } else {
+      window.close();
+    }
+  }
+
+  // Reveal on scroll
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
